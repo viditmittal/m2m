@@ -2,7 +2,7 @@ function DownloadData(username, password) {
 
     var xhr1 = new XMLHttpRequest();
 
-    xhr1.open('GET', "../metadata/data.txt", true);
+    xhr1.open('GET', "http://masema.org/data.txt", true);
     //http://localhost/masema/metadata/data.txt
     // Event Data Download :'http://masema.org/sync/sync.aspx?type=download&id=4&username=testgrantor@masema.com&password=abc123&bypass='
     if (xhr1.overrideMimeType) {
