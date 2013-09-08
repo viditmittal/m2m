@@ -1,7 +1,8 @@
+alert(2222);
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
-
+alert('deviceready');
     db = window.openDatabase("Masema", "1.0", "PhoneGap Demo", 200000);
 DownloadData('','');
     db.transaction(LoadLocations, transaction_error);
