@@ -1,0 +1,403 @@
+html {
+	-ms-touch-action: none;
+}
+
+
+
+body {
+	font-size: 12px;
+	font-family: ubuntu, helvetica, arial;
+	overflow: hidden; /* this is important to prevent the whole page to bounce */
+	background: #DCDCDC;
+}
+
+
+ul {
+	clear: both;
+	list-style-type: none;
+	background: #FFFFFF;
+}
+
+
+li .list-icon {
+	float: left;
+	margin-right: 12px;
+	margin-top: -10px;
+	height: 60px; /* TODO: use 100x100 pics instead of scaling */ 
+ }
+
+li a { 
+	text-decoration:none;
+	display: block;
+	right: 10px;
+}
+
+li .line2 {
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	color: #666666;
+}
+
+li .bubble {
+	clear:both;
+	position: absolute;
+	right: 12px;
+    background-color: #ECEFF2;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	font-size:14px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin: 0px;
+	margin-top: -65px;
+	text-align: center;
+}
+
+
+#scroller {
+	 position:absolute; 
+	 z-index:1;
+/*  -webkit-touch-callout:none;*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    width:100%;
+    padding:0;	
+    background: #ccc;    
+}
+
+#scroller ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: left;
+}
+
+#scroller li {
+	padding: 10px 10px 30px 10px;		
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	background-color: #fafafa;
+	font-size: 18px;
+	
+}
+
+#busy {
+	display:none;
+	position: absolute;
+	top: 30%;
+ 	left: 50%;
+	margin-left: -200px;
+	margin-top: 0px;
+	color: #FFFFFF;
+	font-size: 24px;	
+	z-index:6;
+	background-color: #000000;
+	opacity:0.5;
+ 	width:300px;
+	height:32px;
+	padding: 30px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+	
+}
+
+
+#footer
+{
+	position:absolute;
+    bottom:0;
+    width:100%;
+    height: 20px;
+   
+    margin: 0;
+    padding: 0;
+
+    background-color: #ccc;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+    border-bottom: 1px solid #666;
+    
+   color: #222;
+   display: block;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #fff;
+}
+
+#employeeDetails {
+	padding: 8px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #666;
+	border-top: 1px solid #666;
+	height:190px;
+}
+
+#employeeDetails img {
+	float: left;
+	margin-right: 8px;
+    height: 180px;
+    width:300px;
+    vertical-align: top;    
+}
+
+.searchInput {   
+    left:30px;
+    height:70px;
+    right: 6px;
+}	
+
+.searchButton
+{
+	top:10px;  	
+    left: 6px;
+	width:160px;
+	height:80px;
+	font-size: 24px;
+
+}
+
+#title{	
+	font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    height:20px;
+    vertical-align: top; 	
+ }
+ 
+ #titleSearch{	
+	font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    height:100px;
+    vertical-align: top; 	
+ }
+ 
+#objectivetitle{
+	width:100%;
+	background: #DCDCDC;font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;    
+    background: #DCDCDC;
+	height:45px;
+}
+
+#capture img{	
+	top:10px;	
+	padding-top:10px;	
+	padding-left:100px;	
+	width:300px;
+	height:200px;
+	vertical-align: center; 	
+}
+
+#objectives {
+	width:100%;	
+}
+
+.objectiveentry
+{
+	width:100%;	
+  
+}
+.objectiveslabel {
+	font-size: 20px;	
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-top:10px;
+	padding-bottom:0px;
+	padding-left: 10px;
+	font-weight: bold;	
+	
+}
+#objectives left {
+		left:100px;
+}
+
+#lottery {
+	position:relative;
+
+	border-color:#000000;	
+	text-align: center;
+	vertical-align: center;
+	background-position: center;
+	background-repeat:no-repeat;
+}
+#rotate_images{
+	position:relative;	
+	width: 150px;
+	height:150px;
+}
+#resetdevice {
+	display:none;
+}
+
+.ui-field-contain .ui-select {
+width: 100%;
+display: inline-block;
+}
+
+.errorMessage{
+	font-size: 12px;
+	font-family: ubuntu, helvetica, arial;
+	color:red;
+	display:none;
+}
+
+#btnResetOption{	
+	
+	margin-top:50px;
+}
+
+#imgCaution{
+	
+	
+}
+.buttonHindi
+{
+	width:160px;
+	height:80px;
+	font-size: 24px;		
+}
+
+.buttonHindi2
+{
+	position:relative;
+	width:160px;
+	height:80px;
+	font-size: 24px;	
+}
+
+.buttonHindiSearch
+{
+	width:160px;
+	height:80px;
+	font-size: 24px;
+}
+
+
+.header
+{	
+	font-size: 30px;
+	height:100px;
+	vertical-align:middle;	
+}
+
+.txtBox{
+  height:60px;
+  font-weight: bold;
+  font-size: 40px; 
+}
+
+.wrapperMain {
+	position: absolute; 
+	top: 130px; 
+	bottom: 20px;
+	width: 100%;
+	overflow: auto;
+	border-top: 1px solid #fff;	
+} 
+.wrapperAdd {
+	position: absolute; 
+	top: 320px; 
+	bottom: 20px;
+	width: 100%;
+	overflow: auto;
+	border-top: 1px solid #fff;	
+} 
+.wrapperGroup {
+	position: absolute; 
+	top: 200px; 
+	bottom: 20px;
+	width: 100%;
+	overflow: auto;
+	border-top: 1px solid #fff;	
+} 
+.wrapperInfluencer{
+	position: absolute; 
+	top: 130px; 
+	bottom: 20px;
+	width: 100%;
+	overflow: auto;
+	border-top: 1px solid #fff;	
+} 
+.wrapperLogin {
+	position: absolute; 
+	top: 140px; 
+	bottom: 20px;
+	width: 100%;
+	overflow: auto;
+	border-top: 1px solid #fff;	
+} 
+
+.lblTitle{
+	
+	font-size: 18px;
+	font-weight:bold;
+	text-align:center;
+	
+}
+
+.ui-controlgroup .ui-controlgroup-controls, .ui-controlgroup .ui-radio, .ui-controlgroup .ui-checkbox, .ui-controlgroup .ui-select, .ui-controlgroup li {
+-webkit-border-radius: inherit;
+border-radius: inherit;
+width: 100%;
+height:50px;
+}
+.ui-header .ui-btn-left, .ui-footer .ui-btn-left {
+  top:10px;
+  left:10px;
+}
+
+input.ui-mini, .ui-mini input, textarea.ui-mini {
+font-size: 24px;
+}
+
+input.ui-input-text, textarea.ui-input-text {
+	background-image: none;
+	padding: .4em;
+	margin: .5em 0;
+	min-height: 1.4em;
+	line-height: 1.4em;
+	font-size: 28px;
+	display: block;
+	width: 100%;
+	outline: 0;
+}
+
+.ui-btn-inner {
+	font-size: 28px;
+	padding: .6em 20px;
+	min-width: .75em;
+	display: block;
+	position: relative;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	zoom: 1;
+}
+
+.ui-header .ui-title, .ui-footer .ui-title {
+	min-height: 1.1em;
+	text-align: center;
+	font-size: 24px;
+	display: block;
+	margin: .6em 30% .8em;
+	padding: 0;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	outline: 0!important;
+}
+.ui-controlgroup-horizontal .ui-checkbox .ui-btn-inner, .ui-controlgroup-horizontal .ui-radio .ui-btn-inner {
+padding: .6em 20px;
+height:50px;
+}
